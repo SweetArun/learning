@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	char c ;
+	printf("\n enter lower case letter or upper case letter or number \n");
+	scanf("%c",&c);
+	if((c>=65) && (c<=90))
+	printf("\n entered letter is upper case");
+	else if((c>=97) && (c<=122))	
+	printf("\n entered letter is lower case");
+	else if((c>=48)&&(c<=57))
+	printf("\n entered letter is number");	
+	else
+	printf("\n entered letter is special character");
+}
