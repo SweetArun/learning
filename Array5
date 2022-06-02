@@ -1,0 +1,24 @@
+// read two arrays and sum them and store them in 3rd array//
+#include<stdio.h>
+int main()
+{
+	int n;
+	printf("\n enter the number of elements to sum");
+	scanf("%d",&n);
+	int i,a[n],b[n],sum[n];
+	printf("\n enter the 1st array elements");
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	printf("\n enter the second array elements");
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&b[i]);
+	}
+	for(i=0;i<n;i++)
+	{
+		sum[i]=a[i]+b[i];
+		printf("\n sum of %d array element %d",i,sum[i]);
+	}
+}
