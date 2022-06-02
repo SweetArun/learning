@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main()
+{
+	int a[100],i;
+	for(i=0;i<100R;i++)
+	{
+	printf("\n %d",a[i]);
+	}
+}
