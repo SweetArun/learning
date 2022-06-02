@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+	int n;
+	printf(" enter the number of array elements ");
+	scanf("%d",&n);
+	int a[n],i,odd=0,even=0;
+	printf(" enter the numbers ");
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&a[i]);
+		if(a[i]%2)
+		{
+			odd++;
+		}
+		else
+		{
+			even++;
+		}
+	}
+	printf("\n even %d",even);
+	printf("\n odd %d",odd);
+}
