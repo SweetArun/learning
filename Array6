@@ -1,0 +1,52 @@
+#include<stdio.h>
+int main()
+{
+	int i,j;
+	printf("enter the rows and columns of 1st matrix \n");
+	scanf("\n %d%d",&i,&j);
+	int k,l;
+	printf("\n enter the rows and columns of 2nd matrix \n");
+	scanf("%d%d",&k,&l);
+	int a[i][j],b[k][l],sum[i][j],c=0,d=0;
+	if((i==k)&&(j==l))
+	{
+		printf("\n enter the elements of 1st matrix \n");
+		for(i=0;i<k;i++)
+		{
+			for(j=0;j<l;j++)
+			{
+				scanf("%d",&a[i][j]);
+				c=c+a[i][j];
+				printf("\t");
+			}
+				printf("\n");
+		}
+		printf("\n enter the elements of 2nd matrix \n");
+		for(k=0;k<i;k++)
+		{
+			for(l=0;l<j;l++)
+			{
+				scanf("%d",&b[k][l]);
+				d=d+b[k][l];
+				printf("\t");
+			}
+			
+			printf("\n");
+		}
+		printf("\n sum of elements of 2 matrix = %d \t %d",c,d);
+		printf("\n sum of matrix = \n");
+		for(i=0;i<k;i++)
+		{
+			for(j=0;j<l;j++)
+			{
+				sum[i][j]=a[i][j]+b[i][j];
+				printf("%d \t",sum[i][j]);
+			}
+			printf("\n");
+		}
+	}
+		else
+		{
+			printf("\n invalid matrix selection");
+		}
+}
