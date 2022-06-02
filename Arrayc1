@@ -1,0 +1,9 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int a[5]={12,13,14,15,16};
+	int b;
+	b=a[0]-a[4];
+	printf("%d",b);
+}
