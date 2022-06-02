@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int i=0;
+	do
+	{
+		printf("\n Arun . . R U der . . Swetha . . ");
+		i++;
+	}
+	while(i==1);
+}
